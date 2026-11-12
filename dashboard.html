@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Iyunga - Dashboard></title>
+        <link rel="stylesheet"
+        href="style.css">
+    </head>
+    <body data-page="dashboard">
+        <div class="dashboard-containe">
+            <aside class="sidebar">
+                <h2>🎓IYUNGA</h2>
+                <p>STUDENT MANAGEMENT</p>
+                <nav>
+                    <a class="active"
+                    href="dashboard.html">
+                dashboard
+            </a>
+            <a 
+            href="data-entry.html">
+        Student registration </a>
+        <a 
+        href="reports.html"
+        student Reports></a>
+        <a
+        href="index.html">
+    Main Website</a>
+                </nav>
+
+                <button
+                class="logout-btn"
+                onclick="logout()">
+            logout
+        </button>
+            </aside>
+            <main class="main-content">
+                <header
+                class="dashboard-header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome to iyunga student Management System</p>
+            </div>
+            <div class="admin-profile">
+                <span>👤</span>
+                Adminstrator
+            </div>
+            </header>
+
+            <section
+            class="Welcome-section">
+        <h2>Welcome back,
+            Adminstrator!
+        </h2>
+    <p>manage student information and monitor school records.</p>
+
+    </section>
+    <section 
+    class="statistics">
+    <div class="stat-cardblue">
+        <h3>total Student</h3>
+        <h1
+        id="totalstudents">0</h1>
+        </div>
+        <div
+        class="stat-card green"><h3>Male students</h3>
+        <h1
+        id="malestudents">0</h1>
+    </div>
+    <div class="stat-card dark">
+        <h3>Total classes</h3>
+        <h1 id="totalclasses">0</h1>
+    </div>
+</section>
+
+<section 
+class="dashboard-section">
+<h2>Quick Action</h2>
+<div 
+class="quick-action">
+<a
+href="data-entry.html">
+<span>➕</span>
+<h3>register student</h3>
+<p>add new student information</p>
+</a>
+
+<a
+href="reports.html">
+<span>📊</span>
+<h3>student report</h3>
+<p>View register students</p>
+</a>
+</div>
+</section>
+
+<section
+class="dashboard-section">
+<h2>recently registered students</h2>
+<div
+class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Parent</th>
+        </tr>
+    </thead>
+    <tbody
+    id="recentstudent"></tbody>
+</table>
+</div>
+</section>
+<footer
+class="main-footer">
+@2026 Iyunga secondary school</footer>            
+</main>
+        </div>
+        <script scr="app.js"></script>
+    </body>
+</html>

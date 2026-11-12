@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Iyunga School - login</title>
+        <link rel="stylesheet"
+        href="style.css">
+    </head>
+    <body class="login-page">
+        <div class="login-container">
+            <div class="login-brand">
+                class="school-logo">🎓</div>
+                <h1>IYUNGA SECONDARY SCHOOL</h1>
+                <h2>Student Management System</h2>
+                <p>Welcome to Iyunga Student Management Portal</p>
+            </div>
+            <div class="login-form-container">
+                <h2>Adminstrator login</h2>
+                <p>please enter your login detail</p>
+                <form id="loginForm">
+                    <label>username</label>
+                    <input type="text"
+                    id="username"
+                    placeholder="Enter username"required>
+                    <label>password</label>
+                    <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required>
+                    <button type="submit">
+                        LOGIN
+                    </button>
+
+                    <p
+                    id="loginMessage"></p>
+                </form>
+                <div class="demo-login">
+                    Demo username:
+                    admin<br>
+                    Demo password:12345
+                </div>
+                <footer>@ 2026 Iyunga secondary school</footer>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

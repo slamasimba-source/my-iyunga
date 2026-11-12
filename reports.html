@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Reports - Iyunga</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="reports">
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+
+            <h2>🎓 IYUNGA</h2>
+
+            <p>STUDENT MANAGEMENT</p>
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="data-entry.html">
+                    Student Registration
+                </a>
+
+                <a class="active" href="reports.html">
+                    Student Reports
+                </a>
+
+                <a href="index.html">Main Website</a>
+            </nav>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h1>Student Reports</h1>
+                    <p>View and manage student records</p>
+                </div>
+
+            </header>
+
+
+            <section class="report-container">
+
+                <div class="report-heading">
+
+                    <div>
+                        <h2>Registered Students</h2>
+                        <p>Student information records</p>
+                    </div>
+
+                    <button id="downloadCsv" class="save-btn">
+                        Download Report
+                    </button>
+
+                </div>
+
+
+                <div class="report-search">
+
+                    <input
+                        type="search"
+                        id="searchStudent"
+                        placeholder="Search student by name..."
+                    >
+
+                    <select id="classFilter">
+
+                        <option value="">All Classes</option>
+
+                        <option>Form One</option>
+
+                        <option>Form Two</option>
+
+                        <option>Form Three</option>
+
+                        <option>Form Four</option>
+
+                        <option>Form Five</option>
+
+                        <option>Form Six</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Student Name</th>
+                                <th>Gender</th>
+                                <th>Class</th>
+                                <th>Parent Name</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="studentTable">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p id="reportCount"></p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

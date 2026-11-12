@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration - Iyunga</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="entry">
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+
+            <h2>🎓 IYUNGA</h2>
+
+            <p>STUDENT MANAGEMENT</p>
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+
+                <a class="active" href="data-entry.html">
+                    Student Registration
+                </a>
+
+                <a href="reports.html">Student Reports</a>
+
+                <a href="index.html">Main Website</a>
+            </nav>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h1>Student Registration</h1>
+                    <p>Enter new student information</p>
+                </div>
+
+            </header>
+
+
+            <section class="registration-container">
+
+                <h2>Student Information Form</h2>
+
+                <p>Fill in the required student details below.</p>
+
+                <form id="studentForm">
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+
+                            <label>Student Full Name</label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                placeholder="Enter full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Date of Birth</label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Gender</label>
+
+                            <select id="gender" required>
+
+                                <option value="">Select gender</option>
+
+                                <option value="Male">Male</option>
+
+                                <option value="Female">Female</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Class / Form</label>
+
+                            <select id="studentClass" required>
+
+                                <option value="">Select class</option>
+
+                                <option>Form One</option>
+
+                                <option>Form Two</option>
+
+                                <option>Form Three</option>
+
+                                <option>Form Four</option>
+
+                                <option>Form Five</option>
+
+                                <option>Form Six</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Parent / Guardian Name</label>
+
+                            <input
+                                type="text"
+                                id="parentName"
+                                placeholder="Enter parent name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Parent Phone Number</label>
+
+                            <input
+                                type="tel"
+                                id="parentPhone"
+                                placeholder="Enter phone number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group full">
+
+                            <label>Student Address</label>
+
+                            <input
+                                type="text"
+                                id="address"
+                                placeholder="Enter student address"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-buttons">
+
+                        <button type="submit" class="save-btn">
+                            Save Student
+                        </button>
+
+                        <button type="reset" class="clear-btn">
+                            Clear Form
+                        </button>
+
+                    </div>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
